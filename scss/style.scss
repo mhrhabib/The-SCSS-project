@@ -1,0 +1,75 @@
+body{
+    background: #fff;
+    font-family: Arail;
+    font-size: 16px;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Tahoma;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+header{
+    background: #000000;
+    color: #ffffff;
+    height: 60px;
+}
+
+#logo{
+    float: left;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    padding-top: 4px;
+}
+
+nav li{
+    list-style: none;
+    float: left;
+    padding-right: 20px;
+}
+
+nav a{
+     color: #ffffff;
+     text-decoration: none;
+}
+
+nav a:hover, nav a.active{
+    color: #92d462;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
