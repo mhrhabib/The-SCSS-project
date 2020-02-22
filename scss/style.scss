@@ -1,25 +1,28 @@
+@import "variables.scss";
+
+
 body{
     background: #fff;
-    font-family: Arail;
-    font-size: 16px;
+    font-family: $main-font;
+    font-size: $font-size;
     line-height: 1.4em;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: $font-color;
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: Tahoma;
+    font-family: $heading-font;
 }
 
 .container{
-    width: 80%;
+    width: $template-width;
     margin: auto;
     overflow: auto;
 }
 
 header{
-    background: #000000;
+    background: $secondary-color;
     color: #ffffff;
     height: 60px;
 }
@@ -30,33 +33,54 @@ header{
 
 nav{
     float: right;
-}
-
-nav ul{
-    padding-top: 4px;
-}
-
-nav li{
-    list-style: none;
-    float: left;
-    padding-right: 20px;
-}
-
-nav a{
-     color: #ffffff;
-     text-decoration: none;
-}
-
-nav a:hover, nav a.active{
-    color: #92d462;
+    
+     ul{
+         
+        padding-top: 4px;
+         
+         li{
+            list-style: none;
+            float: left;
+            padding-right: 20px;
+             
+              a{
+                 color: #ffffff;
+                 text-decoration: none;
+            }
+              a:hover, a.active{
+                color: mix(white, $main-color, 40%);
+            }
+        }
+    }
 }
 
 .showcase{
-    height: 400px;
+    height: $showcase-height;
+    
+    .container{
+        height: $showcase-height +1;
+        overflow: auto;
+        
+         h1{
+            background: transparent;
+            padding: 20px;
+            opacity: 0.8;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+    }
 }
 
 .showcase-inner{
     height: 150px;
+    
+     h1{
+        background: transparent;
+        padding: 20px;
+        opacity: 0.8;
+        display: inline-block;
+        box-sizing: border-box;
+    }
 }
 
 .showcase, .showcase-inner{
@@ -66,21 +90,11 @@ nav a:hover, nav a.active{
     line-height: 1.7rem;
 }
 
-.showcase .container{
-    height: 401px;
-    overflow: auto;
-}
 
-.showcase h1, .showcase-inner h1{
-    background: transparent;
-    padding: 20px;
-    opacity: 0.8;
-    display: inline-block;
-    box-sizing: border-box;
-}
+
 
 .button-a{
-    background: #1c1b3a;
+    background: $main-color;
     padding: 20px;
     color: #ffffff;
     text-decoration: none;
@@ -88,15 +102,23 @@ nav a:hover, nav a.active{
 }
 
 .button-b{
-    background: #000000;
+    background: $secondary-color;
     padding: 20px;
     color: #ffffff;
     text-decoration: none;
     border: none;
 }
 
+.button-a:hover{
+    background: $main-color-tinted;
+}
+
+.button-b:hover{
+     background: $secondary-color-tinted;
+}
+
 .section-a{
-    background: #1c1b3a;
+    background: $main-color;
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -114,7 +136,8 @@ nav a:hover, nav a.active{
 }
 
 .fa{
-    font-size: 60px;
+    font-size: $icon-size;
+    color: $main-color;
 }
 
 .home-list{
@@ -132,7 +155,7 @@ nav a:hover, nav a.active{
 footer{
     padding: 30px 0;
     margin-top: 30px;
-    background: #000000;
+    background: $secondary-color;
     color: #ffffff;
     text-align: center;
 }
@@ -166,7 +189,6 @@ form#contact textarea{
     border: #ccc solid 1px;
     padding: 4px;
 }
-
 
 
 

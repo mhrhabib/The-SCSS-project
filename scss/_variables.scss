@@ -1,0 +1,23 @@
+/*Fonts*/
+$main-font: Arial;
+$heading-font: Tahoma;
+$font-size: 16px;
+$font-color: #333333;
+
+/*Color-Scheme*/
+$main-color: #1c1b3a;
+$secondary-color: #000000;
+$main-color-tinted: mix(white, $main-color, 40%);
+$secondary-color-tinted: mix(white, $secondary-color, 50%);
+
+/*Some other scheme
+    $main-color: #7289da;
+    $secondary-color: #99aab5;
+    
+     $main-color: #ae1313;
+     $secondary-color: #bd3449;*/
+/*Dimensions*/
+
+$template-width: 80%;
+$showcase-height: 400px;
+$icon-size: 60px;

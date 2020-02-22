@@ -1,11 +1,20 @@
+/*Fonts*/
+/*Color-Scheme*/
+/*Some other scheme
+    $main-color: #7289da;
+    $secondary-color: #99aab5;
+    
+     $main-color: #ae1313;
+     $secondary-color: #bd3449;*/
+/*Dimensions*/
 body {
   background: #fff;
-  font-family: Arail;
+  font-family: Arial;
   font-size: 16px;
   line-height: 1.4em;
   margin: 0;
   padding: 0;
-  color: #333; }
+  color: #333333; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Tahoma; }
@@ -25,44 +34,44 @@ header {
 
 nav {
   float: right; }
-
-nav ul {
-  padding-top: 4px; }
-
-nav li {
-  list-style: none;
-  float: left;
-  padding-right: 20px; }
-
-nav a {
-  color: #ffffff;
-  text-decoration: none; }
-
-nav a:hover, nav a.active {
-  color: #92d462; }
+  nav ul {
+    padding-top: 4px; }
+    nav ul li {
+      list-style: none;
+      float: left;
+      padding-right: 20px; }
+      nav ul li a {
+        color: #ffffff;
+        text-decoration: none; }
+      nav ul li a:hover, nav ul li a.active {
+        color: #777689; }
 
 .showcase {
   height: 400px; }
+  .showcase .container {
+    height: 401px;
+    overflow: auto; }
+    .showcase .container h1 {
+      background: transparent;
+      padding: 20px;
+      opacity: 0.8;
+      display: inline-block;
+      box-sizing: border-box; }
 
 .showcase-inner {
   height: 150px; }
+  .showcase-inner h1 {
+    background: transparent;
+    padding: 20px;
+    opacity: 0.8;
+    display: inline-block;
+    box-sizing: border-box; }
 
 .showcase, .showcase-inner {
   background: url(../img/cover.jpg) no-repeat 0 -400px;
   color: #ffffff;
   font-size: 21px;
   line-height: 1.7rem; }
-
-.showcase .container {
-  height: 401px;
-  overflow: auto; }
-
-.showcase h1, .showcase-inner h1 {
-  background: transparent;
-  padding: 20px;
-  opacity: 0.8;
-  display: inline-block;
-  box-sizing: border-box; }
 
 .button-a {
   background: #1c1b3a;
@@ -77,6 +86,12 @@ nav a:hover, nav a.active {
   color: #ffffff;
   text-decoration: none;
   border: none; }
+
+.button-a:hover {
+  background: #777689; }
+
+.button-b:hover {
+  background: gray; }
 
 .section-a {
   background: #1c1b3a;
@@ -94,7 +109,8 @@ nav a:hover, nav a.active {
   float: left; }
 
 .fa {
-  font-size: 60px; }
+  font-size: 60px;
+  color: #1c1b3a; }
 
 .home-list {
   padding: 0;
